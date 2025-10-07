@@ -1,10 +1,10 @@
 {
 	"info": {
-		"_postman_id": "9d1d5e7e-9755-41a1-9659-b85980cb3d76",
-		"name": "Property-project",
+		"_postman_id": "1c95ca1d-d436-4e03-8a15-249783dd8859",
+		"name": "Property-project Copy",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "44568136",
-		"_collection_link": "https://mohamadsasa.postman.co/workspace/Mohamad-sasa's-Workspace~85aaf89a-09aa-4c7a-89c8-6363b310e275/collection/44568136-9d1d5e7e-9755-41a1-9659-b85980cb3d76?action=share&source=collection_link&creator=44568136"
+		"_collection_link": "https://mohamadsasa.postman.co/workspace/Mohamad-sasa's-Workspace~85aaf89a-09aa-4c7a-89c8-6363b310e275/collection/44568136-1c95ca1d-d436-4e03-8a15-249783dd8859?action=share&source=collection_link&creator=44568136"
 	},
 	"item": [
 		{
@@ -121,7 +121,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "1|3w8ubNp0EkpR7aG4ZAzIdFQz5v75vJpaZ8jsbF243ebd1c01",
+							"value": "",
 							"type": "string"
 						}
 					]
@@ -157,7 +157,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "1|3w8ubNp0EkpR7aG4ZAzIdFQz5v75vJpaZ8jsbF243ebd1c01",
+							"value": "",
 							"type": "string"
 						}
 					]
@@ -201,7 +201,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "2|BcUEaE6WttWddYn6XWsf3OQiDOS06GDS9a3LPQjN2062f7ac",
+							"value": "",
 							"type": "string"
 						}
 					]
@@ -279,7 +279,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "1|3w8ubNp0EkpR7aG4ZAzIdFQz5v75vJpaZ8jsbF243ebd1c01",
+							"value": "",
 							"type": "string"
 						}
 					]
@@ -324,7 +324,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "1|3w8ubNp0EkpR7aG4ZAzIdFQz5v75vJpaZ8jsbF243ebd1c01",
+							"value": "",
 							"type": "string"
 						}
 					]
@@ -405,7 +405,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "1|3w8ubNp0EkpR7aG4ZAzIdFQz5v75vJpaZ8jsbF243ebd1c01",
+							"value": "",
 							"type": "string"
 						}
 					]
@@ -489,7 +489,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "1|3w8ubNp0EkpR7aG4ZAzIdFQz5v75vJpaZ8jsbF243ebd1c01",
+							"value": "",
 							"type": "string"
 						}
 					]
@@ -538,7 +538,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "1|3w8ubNp0EkpR7aG4ZAzIdFQz5v75vJpaZ8jsbF243ebd1c01",
+							"value": "",
 							"type": "string"
 						}
 					]
@@ -661,7 +661,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "1|3w8ubNp0EkpR7aG4ZAzIdFQz5v75vJpaZ8jsbF243ebd1c01",
+							"value": "",
 							"type": "string"
 						}
 					]
@@ -782,7 +782,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "1|3w8ubNp0EkpR7aG4ZAzIdFQz5v75vJpaZ8jsbF243ebd1c01",
+							"value": "",
 							"type": "string"
 						}
 					]
@@ -832,7 +832,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "1|3w8ubNp0EkpR7aG4ZAzIdFQz5v75vJpaZ8jsbF243ebd1c01",
+							"value": "",
 							"type": "string"
 						}
 					]
