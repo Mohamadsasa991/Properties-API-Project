@@ -1,0 +1,878 @@
+{
+	"info": {
+		"_postman_id": "9d1d5e7e-9755-41a1-9659-b85980cb3d76",
+		"name": "Property-project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "44568136",
+		"_collection_link": "https://mohamadsasa.postman.co/workspace/Mohamad-sasa's-Workspace~85aaf89a-09aa-4c7a-89c8-6363b310e275/collection/44568136-9d1d5e7e-9755-41a1-9659-b85980cb3d76?action=share&source=collection_link&creator=44568136"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "sasa@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345678",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/login",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"login"
+					]
+				},
+				"description": "This Api allows you to login to the website\n\nBut you must register first"
+			},
+			"response": []
+		},
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "mohamad",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "sasa@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345678",
+							"type": "text"
+						},
+						{
+							"key": "password_confirmation",
+							"value": "12345678",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/register",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"register"
+					]
+				},
+				"description": "This API allows you to register"
+			},
+			"response": []
+		},
+		{
+			"name": "Logout",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "1|3w8ubNp0EkpR7aG4ZAzIdFQz5v75vJpaZ8jsbF243ebd1c01",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/logout",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Brokers",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "1|3w8ubNp0EkpR7aG4ZAzIdFQz5v75vJpaZ8jsbF243ebd1c01",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/brokers",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"brokers"
+					]
+				},
+				"description": "Get all the Brokers"
+			},
+			"response": []
+		},
+		{
+			"name": "Store Brokers",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "2|BcUEaE6WttWddYn6XWsf3OQiDOS06GDS9a3LPQjN2062f7ac",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "alis",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "rests",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "test33s",
+							"type": "text"
+						},
+						{
+							"key": "zip_code",
+							"value": "121",
+							"type": "text"
+						},
+						{
+							"key": "phone_number",
+							"value": "1212121212",
+							"type": "text"
+						},
+						{
+							"key": "logo_path",
+							"value": "test34",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/brokers",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"brokers"
+					]
+				},
+				"description": "This Api allows you to create new Broker\n\nBut you must be login"
+			},
+			"response": []
+		},
+		{
+			"name": "Show Broker",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "1|3w8ubNp0EkpR7aG4ZAzIdFQz5v75vJpaZ8jsbF243ebd1c01",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/brokers/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"brokers",
+						"1"
+					]
+				},
+				"description": "This Api allows you to show specific broker"
+			},
+			"response": []
+		},
+		{
+			"name": "Update Broker",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "1|3w8ubNp0EkpR7aG4ZAzIdFQz5v75vJpaZ8jsbF243ebd1c01",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "ahmed sasasa",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "saasrrrr",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "sfsdaa",
+							"type": "text"
+						},
+						{
+							"key": "zip_code",
+							"value": "1212",
+							"type": "text"
+						},
+						{
+							"key": "phone_number",
+							"value": "2343211111",
+							"type": "text"
+						},
+						{
+							"key": "logo_path",
+							"value": "test",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/brokers/2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"brokers",
+						"2"
+					]
+				},
+				"description": "This Api allows you to show specific broker\n\nBut you must be login"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Broker",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "1|3w8ubNp0EkpR7aG4ZAzIdFQz5v75vJpaZ8jsbF243ebd1c01",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "ahmed sasasa",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "saasrrrr",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "sfsdaa",
+							"type": "text"
+						},
+						{
+							"key": "zip_code",
+							"value": "1212",
+							"type": "text"
+						},
+						{
+							"key": "phone_number",
+							"value": "2343211111",
+							"type": "text"
+						},
+						{
+							"key": "logo_path",
+							"value": "test",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/brokers/3",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"brokers",
+						"3"
+					]
+				},
+				"description": "This Api allows you to delete one broker\n\nyou must be login"
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Properties",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "1|3w8ubNp0EkpR7aG4ZAzIdFQz5v75vJpaZ8jsbF243ebd1c01",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/properties",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"properties"
+					]
+				},
+				"description": "This Api allows you to get all the properties"
+			},
+			"response": []
+		},
+		{
+			"name": "Create new Property",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "1|3w8ubNp0EkpR7aG4ZAzIdFQz5v75vJpaZ8jsbF243ebd1c01",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "address",
+							"value": "test2",
+							"type": "text"
+						},
+						{
+							"key": "listing_type",
+							"value": "Sell Listing",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "test2",
+							"type": "text"
+						},
+						{
+							"key": "zip_code",
+							"value": "12313",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "test2",
+							"type": "text"
+						},
+						{
+							"key": "build_year",
+							"value": "2000",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "2001",
+							"type": "text"
+						},
+						{
+							"key": "bedrooms",
+							"value": "4",
+							"type": "text"
+						},
+						{
+							"key": "bathrooms",
+							"value": "4",
+							"type": "text"
+						},
+						{
+							"key": "sqft",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "price_sqft",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "property_type",
+							"value": "TownHouse",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "Sold",
+							"type": "text"
+						},
+						{
+							"key": "broker_id",
+							"value": "4",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/properties",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"properties"
+					]
+				},
+				"description": "This Api allows you to create new property\n\nBut you must be login"
+			},
+			"response": []
+		},
+		{
+			"name": "Show Property",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "1|3w8ubNp0EkpR7aG4ZAzIdFQz5v75vJpaZ8jsbF243ebd1c01",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "address",
+							"value": "test2",
+							"type": "text"
+						},
+						{
+							"key": "listing_type",
+							"value": "test2",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "test2",
+							"type": "text"
+						},
+						{
+							"key": "zip_code",
+							"value": "12313",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "test2",
+							"type": "text"
+						},
+						{
+							"key": "build_year",
+							"value": "2000",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "2001",
+							"type": "text"
+						},
+						{
+							"key": "bedrooms",
+							"value": "4",
+							"type": "text"
+						},
+						{
+							"key": "bathrooms",
+							"value": "4",
+							"type": "text"
+						},
+						{
+							"key": "sqft",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "price_sqft",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "property_type",
+							"value": "TownHouse",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "Sold",
+							"type": "text"
+						},
+						{
+							"key": "broker_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/properties/2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"properties",
+						"2"
+					]
+				},
+				"description": "This Api allows you to get one property"
+			},
+			"response": []
+		},
+		{
+			"name": "Update Property",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "1|3w8ubNp0EkpR7aG4ZAzIdFQz5v75vJpaZ8jsbF243ebd1c01",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"address\":\"Updated address\"\r\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/properties/2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"properties",
+						"2"
+					]
+				},
+				"description": "This Api allows you to update property info\n\nBut you must be login"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Property",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "1|3w8ubNp0EkpR7aG4ZAzIdFQz5v75vJpaZ8jsbF243ebd1c01",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"address\":\"Updated address\"\r\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/properties/2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"properties",
+						"2"
+					]
+				},
+				"description": "This Api allows you to delete one property\n\nyou must be login"
+			},
+			"response": []
+		}
+	]
+}
