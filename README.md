@@ -19,7 +19,7 @@ Includes authentication, authorization, and complete CRUD operations for users, 
 
 ### 1️⃣ Clone the repository
 ```bash
-git clone https://github.com/yourusername/property-project.git
+git clone https://github.com/Mohamadsasa991/Properties-API-Project.git
 
 cd property-project
 
@@ -37,3 +37,19 @@ php artisan migrate --seed
 php artisan serve
 
 ```
+
+📘 API Documentation
+
+A complete Postman collection is included in this project.
+You can import it into Postman to test all available endpoints.
+
+📁 File path:
+docs/property-project.postman_collection.json
+
+🧑‍💻 Developer
+
+Mohamad Alsasa
+Back-End Developer
+
+📧 [Mohamadalsasa991@gmail.com](mailto:Mohamadalsasa991@gmail.com)  
+💼 [LinkedIn Profile](https://www.linkedin.com/in/mohamad-sasa-22011b250/)
